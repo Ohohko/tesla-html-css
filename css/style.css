@@ -3,6 +3,29 @@
     padding: 0%;
 }
 
+.hero {
+    background-image: url(/img/Model-3-Main-Hero-Desktop-LHD.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+  .safety{
+    height: 100vh;
+    
+    
+  }
+
+  .performance {
+    background-image: url(/img/Model-3-Performance-Hero-Desktop-LHD.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 .top_banner{
     background-color: #ffffff;
     position: fixed;
