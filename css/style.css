@@ -1,13 +1,37 @@
 *{
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
+
+html,body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    left: 2%;
+    color: #ffffff;
+    position:fixed;
+    top: 2%;
+    left: 2%;
+}
+
 
 .hero {
     background-image: url(/img/Model-3-Main-Hero-Desktop-LHD.jpg);
-    height: 100vh;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    top: 0;
+    left: 0;
+
 }
 
 
@@ -15,20 +39,20 @@
 
   .safety{
     height: 100vh;
+    height: 100vw;
+
     
     
   }
 
   .performance {
-    background-image: url(/img/Model-3-Performance-Hero-Desktop-LHD.jpg);
     height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 100vw;
   }
 
 .top_banner{
     background-color: #ffffff;
-    position: fixed;
+    display: flexbox;
     top: 0;
     text-align: center;
     padding: 16px;
@@ -43,19 +67,55 @@
 }
 
 
-.header{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-}
-
-.logo_start_left{
-    max-width: 1%;
-    max-height: 1%;
+header{
 
 }
 
-.nav li{
+.flex-container{
+}
+
+nav{
+  display:flex;
+  align-items: center;
+  background-color: transparent;
+  
+
+}    
+
+
+
+nav li{
     list-style-type: none;
+    flex-direction: row;
+    display: inline-block;
+  
+}
+
+nav li a{
+    color: #393c41;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav li a:hover{
+    text-decoration: none;
+}
+
+nav li a.active{
+    font-weight: bold;
+    color: #393c41;
+    text-decoration: none;
+}
+
+ul li {
+    display: inline-block;
+}
+ul li a {
+    display: block;
+    padding: 10px 25px;
+    color: #333;
+    text-decoration: none;
 
 }
